@@ -1,0 +1,93 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+    <instance name="box" path="models/box-outside"></instance>
+    <image name="white" path="textures/white.png" />
+    <image name="earth" path="textures/earthmap.png" />
+    <image name="dice" path="textures/die.png" />
+    <image name="checkerboard" path="textures/checkerboard-box.png" />
+
+    <!--<light>-->
+        <!--<ambient>0.8 0.8 0.8</ambient>-->
+        <!--<diffuse>0.8 0.8 0.8</diffuse>-->
+        <!--&lt;!&ndash;<specular>0.8 0.8 0.8</specular>&ndash;&gt;-->
+        <!--<position>0 -70 0 </position>-->
+        <!--<spotangle>180</spotangle>-->
+        <!--<spotdirection>0 1 0 </spotdirection>-->
+    <!--</light>-->
+
+    <light>
+        <ambient>0.8 0.8 0.8</ambient>
+        <diffuse>0.8 0.8 0.8</diffuse>
+        <!--<specular>0.8 0.8 0.8</specular>-->
+        <position>0 20 0 </position>
+        <spotangle>180</spotangle>
+        <spotdirection>0 -1 0 </spotdirection>
+    </light>
+    <group>
+
+
+        <!--<transform>-->
+            <!--<set>-->
+                <!--<translate> 0 70 30 </translate>-->
+                <!--<scale>40 40 40</scale>-->
+            <!--</set>-->
+
+            <!--<object instanceof="sphere">-->
+                <!--<material>-->
+                    <!--<ambient> 0.1 0.2 0.1 </ambient>-->
+                    <!--<diffuse> 0.1 0.8 0.1</diffuse>-->
+                    <!--&lt;!&ndash;<specular> 0.1 0.8 0.1</specular>&ndash;&gt;-->
+                    <!--<shininess> 100 </shininess>-->
+                    <!--<absorption>0.0</absorption>-->
+                    <!--<reflection>0.0</reflection>-->
+                    <!--<transparency>1.0</transparency>-->
+                    <!--<refractive>1</refractive>-->
+                <!--</material>-->
+            <!--</object>-->
+        <!--</transform>-->
+
+        <!--<transform>-->
+            <!--<set>-->
+                <!--<translate> 40 30 30 </translate>-->
+                <!--<scale>40 40 40</scale>-->
+            <!--</set>-->
+
+            <!--<object instanceof="box">-->
+                <!--<material>-->
+                    <!--<ambient> 0.1 0.2 0.1 </ambient>-->
+                    <!--<diffuse> 0.1 0.8 0.1</diffuse>-->
+                    <!--&lt;!&ndash;<specular> 0.1 0.8 0.1</specular>&ndash;&gt;-->
+                    <!--<shininess> 100 </shininess>-->
+                    <!--<absorption>0.0</absorption>-->
+                    <!--<reflection>0.0</reflection>-->
+                    <!--<transparency>1.0</transparency>-->
+                    <!--<refractive>1</refractive>-->
+                <!--</material>-->
+            <!--</object>-->
+        <!--</transform>-->
+
+        <transform>
+            <set>
+                <translate> 0 -50 0 </translate>
+                <scale>500 4 500</scale>
+                <translate> 0 -0.5 0 </translate>
+            </set>
+
+            <object instanceof="box" >
+                <material>
+                <ambient> 0.1 0.2 0.1 </ambient>
+                <diffuse> 0.1 0.8 0.1</diffuse>
+                <!--<specular> 0.1 0.8 0.1</specular>-->
+                <shininess> 100 </shininess>
+                <absorption>0.0</absorption>
+                <reflection>0.0</reflection>
+                <transparency>1.0</transparency>
+                <refractive>1</refractive>
+                </material>
+            </object>
+        </transform>
+
+
+    </group>
+
+</scene>
