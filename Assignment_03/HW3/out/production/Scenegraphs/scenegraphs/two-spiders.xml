@@ -1,0 +1,27 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>-50 0 0</translate>
+            </set>
+            <transform name="LSpider">
+                <set>
+                </set>
+                <group name="L" from="scenegraphs/spider.xml">
+                </group>
+            </transform>
+        </transform>
+
+        <transform>
+            <set>
+                <translate>50 0 0</translate>
+            </set>
+            <transform name="RSpider">
+                <set>
+                </set>
+                <group name="R" from="scenegraphs/spider.xml">
+                </group>
+            </transform>
+        </transform>
+    </group>
+</scene>
